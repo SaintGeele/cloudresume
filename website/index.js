@@ -62,6 +62,6 @@ async function updateCounter() {
         $LAMBDA_FUNCTION_URL
     );
     let data = await response.json();
-    counter.innerHTML = `👀 Views: ${data}`;
+    counter.innerHTML = `Views: ${data}`;
 }
 updateCounter();
