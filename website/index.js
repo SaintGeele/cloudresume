@@ -58,20 +58,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const counter = document.querySelector(".counter-number");
 async function updateCounter() {
-    try {
-        const response = await fetch('/api/getCounter');  // Proxy endpoint on your server
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        if (typeof data === 'number') {  // Ensure the data is a number
-            counter.innerHTML = `Views: ${data}`;
-        } else {
-            console.error('Unexpected data type:', data);
-        }
-    } catch (error) {
-        console.error('Failed to update counter:', error);
-    }
+    let response = await fetch(
+        $LAMBDA_FUNCTION_URL
+    );
+    let data = await response.json();
+    counter.innerHTML = `👀 Views: ${data}`;
 }
-
 updateCounter();
