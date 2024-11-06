@@ -1,2 +1,5 @@
 .DS_Store
-.IaC
+.lambda
+.main.tf
+.provider.tf
+.packedlambda.zip
