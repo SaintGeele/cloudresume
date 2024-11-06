@@ -1,3 +1,2 @@
 .DS_Store
-provider.tf
-main.tf
+.IaC
