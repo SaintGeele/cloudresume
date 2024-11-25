@@ -81,3 +81,11 @@ resource "aws_lambda_function_url" "url1" {
     max_age           = 86400
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket         = "geele-cloud-resume"         # Name of the S3 bucket
+    key            = "Users/saintclaire/Desktop/AWS Cloud Resume/aws-cloud-resume-challenge-main/cloudresume/IaC/terraform.tfstate" # Path to store the state file
+    region         = "us-east-1"                # AWS Region
+  }
+}
