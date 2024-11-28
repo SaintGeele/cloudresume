@@ -59,7 +59,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const counter = document.querySelector(".counter-number");
 async function updateCounter() {
     let response = await fetch(
-        $LAMBDA_FUNCTION_URL
+        "$LAMBDA_FUNCTION_URL"
     );
     let data = await response.json();
     counter.innerHTML = `👀 Views: ${data}`;
