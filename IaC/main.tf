@@ -5,6 +5,9 @@ resource "aws_lambda_function" "myfunc" {
   role             = aws_iam_role.iam_for_lambda.arn
   handler          = "func.handler"
   runtime          = "python3.8"
+    tracing_config {
+    mode = "Active" # Can be "PassThrough" or "Active"
+  }
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
@@ -49,10 +52,18 @@ resource "aws_iam_policy" "iam_policy_for_resume_project" {
           "Effect" : "Allow",
           "Action" : [
             "dynamodb:UpdateItem",
-			      "dynamodb:GetItem"
+            "dynamodb:GetItem"
           ],
           "Resource" : "arn:aws:dynamodb:*:*:table/cloudresume"
         },
+        {
+          "Effect": "Allow",
+          "Action": [
+            "xray:PutTraceSegments",
+            "xray:PutTelemetryRecords"
+          ],
+          "Resource": "*"
+        }
       ]
   })
 }
