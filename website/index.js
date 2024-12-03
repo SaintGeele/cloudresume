@@ -49,6 +49,7 @@ var typed_2 = new Typed('#typed_2', {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
@@ -58,9 +59,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const counter = document.querySelector(".counter-number");
 async function updateCounter() {
     let response = await fetch(
-        "https://wrcjdklqdvuabf2niyohibd2aq0kwgqz.lambda-url.us-east-1.on.aws/"
+        "$LAMBDA_FUNCTION_URL"
     );
     let data = await response.json();
-    counter.innerHTML = '👀 Views: ${data.views}';
+    counter.innerHTML = `👀 Views: ${data.views}`;
 }
 updateCounter();
