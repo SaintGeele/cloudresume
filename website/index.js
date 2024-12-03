@@ -57,11 +57,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 const counter = document.querySelector(".counter-number");
+
 async function updateCounter() {
-    let response = await fetch(
-        "https://wrcjdklqdvuabf2niyohibd2aq0kwgqz.lambda-url.us-east-1.on.aws/"
-    );
-    let data = await response.json();
-    counter.innerHTML = `👀 Views: ${data.views}`;
+    try {
+        let response = await fetch(
+            "https://wrcjdklqdvuabf2niyohibd2aq0kwgqz.lambda-url.us-east-1.on.aws/"
+        );
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch views count");
+        }
+
+        let data = await response.json();
+
+        // Validate and sanitize `data.views`
+        const views = parseInt(data.views, 10); // Convert to integer
+        if (isNaN(views) || views < 0) {
+            counter.textContent = "👀 Views: 0"; // Fallback for invalid data
+        } else {
+            counter.textContent = `👀 Views: ${views}`;
+        }
+    } catch (error) {
+        console.error("Error updating counter:", error);
+        counter.textContent = "👀 Views: Error"; // Fallback for fetch failure
+    }
 }
+
 updateCounter();
