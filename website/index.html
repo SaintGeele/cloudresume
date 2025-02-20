@@ -9,48 +9,41 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 
 <body>
 
-  <!-- Responsive Navbar -->
+  <!-- header area -->
   <header id="header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <div class="container-fluid">
-        <!-- Brand/Logo -->
-        <a class="navbar-brand font-staat font-size-40" href="#">GE</a>
-        <!-- Toggler Button for Mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar"
-          aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Collapsible Navigation Menu -->
-        <div class="collapse navbar-collapse" id="primaryNavbar">
-          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active text-white-50 font-os font-size-16" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50 font-os font-size-16" href="#about_me">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white-50 font-os font-size-16" href="#projects">Projects</a>
-            </li>
-            <!-- Additional nav items can be added here -->
-          </ul>
-        </div>
+    <div class="row m-0">
+      <div class="col-3 bgcolor-black">
+        <nav class="primary-nav navbar-expand-md">
+          <div class="site-title text-center text-light py-5">
+            <a href="#" class="navbar-brand font-staat font-size-40">GE</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+            <a href="#about_me" class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
+            <a href="#projects" class="nav-item nav-link text-white-50 font-os font-size-16 active">Projects</a>
+            <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">
+              Couldn't read the counter
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
+    <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
   </header>
-  <!-- End Navbar -->
+  <!-- #header area -->
 
   <main id="site-main">
     <div class="row m-0">
       <div class="col-md-9 offset-md-3 px-0">
 
-        <!-- Site Banner Area -->
+        <!-- site-banner area -->
         <section class="site-banner bg-light" id="home">
           <div class="banner-area">
             <div class="author text-center">
@@ -60,16 +53,16 @@
             </div>
           </div>
         </section>
-        <!-- End Site Banner Area -->
+        <!-- #site-banner area -->
 
-        <!-- About Me Area -->
+        <!-- about me area -->
         <section class="about px-4 my-5" id="about_me">
           <div class="me py-5">
-            <h5 class="text-uppercase font-os font-size-16 text-muted">information</h5>
+            <h5 class="text-uppercase font-os font-size-16 text-muted">Information</h5>
             <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
           </div>
           <div class="row m-0">
-            <div class="col-sm-5">
+            <div class="col-sm-5 ps-0">
               <img src="./assets/banner.png" alt="profile image" class="img-fluid">
             </div>
             <div class="col-sm-6">
@@ -91,6 +84,7 @@
                 </div>
               </div>
               <button type="button" class="btn btn-dark text-uppercase me-3" id="downloadBtn">Download Resume</button>
+
               <script>
                 document.getElementById("downloadBtn").addEventListener("click", function () {
                   window.location.href = "./assets/GeeleResume.pdf";
@@ -99,9 +93,9 @@
             </div>
           </div>
         </section>
-        <!-- End About Me Area -->
+        <!-- #about me area -->
 
-        <!-- Awards -->
+        <!-- awards -->
         <section class="awards px-4 py-5" id="awards">
           <div class="do py-5">
             <h5 class="text-uppercase font-os font-size-16 text-muted">What I have achieved</h5>
@@ -133,71 +127,70 @@
           </div>
         </section>
 
-        <!-- Work / Projects -->
+        <!-- work -->
         <section class="work py-5 px-4 bg-light" id="projects">
           <div class="py-3">
             <h5 class="text-uppercase font-os font-size-16 text-muted">Projects</h5>
             <h1 class="text-uppercase font-staat font-size-34">Creative Work</h1>
           </div>
           <div class="row">
-            <div class="frame col-6"></div>
             <div class="frame col-sm-4 pb-4">
-              <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09">
-                <img src="./assets/work/project 01.png" alt="Project 1" class="img-fluid">
+              <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09" target="_blank">
+                <img src="./assets/work/project 01.png" alt="work1" class="img-fluid">
               </a>
               <div class="details">
                 <h2>Implementation of a set of EC2 instances using Terraform</h2>
                 <p>
-                  <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09" title="Live Site">
+                  <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09" title="Live Site" target="_blank">
                     <i class="far fa-eye eye"></i>
                   </a>
                 </p>
               </div>
             </div>
             <div class="frame col-sm-4 pb-4">
-              <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac">
-                <img src="./assets/work/project 02.png" alt="Project 2" class="img-fluid">
+              <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac" target="_blank">
+                <img src="./assets/work/project 02.png" alt="work1" class="img-fluid">
               </a>
               <div class="details">
-                <h2>Implementation of a Scalable Web Application</h2>
+                <h2>Implementation of a Scalable Web Applications</h2>
                 <p>
-                  <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac" title="Live Site">
+                  <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac" title="Live Site" target="_blank">
                     <i class="far fa-eye eye"></i>
                   </a>
                 </p>
               </div>
             </div>
             <div class="frame col-sm-4 pb-4">
-              <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb">
-                <img src="./assets/work/project 03.png" alt="Project 3" class="img-fluid">
+              <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb" target="_blank">
+                <img src="./assets/work/project 03.png" alt="work1" class="img-fluid">
               </a>
               <div class="details">
                 <h2>Migration of a Workload running in a Corporate Data Center</h2>
                 <p>
-                  <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb" title="Live Site">
+                  <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb" title="Live Site" target="_blank">
                     <i class="far fa-eye eye"></i>
                   </a>
                 </p>
               </div>
             </div>
             <div class="frame col-sm-4 pb-4">
-              <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511">
-                <img src="./assets/work/project 04.png" alt="Project 4" class="img-fluid">
+              <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511" target="_blank">
+                <img src="./assets/work/project 04.png" alt="work1" class="img-fluid">
               </a>
               <div class="details">
                 <h2>Automated user migration and management of AWS IAM</h2>
                 <p>
-                  <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511" title="Live Site">
+                  <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511" title="Live Site" target="_blank">
                     <i class="far fa-eye eye"></i>
                   </a>
                 </p>
               </div>
             </div>
-          </div>
+          </div> <!-- Closing the row div -->
         </section>
-        <!-- End Work / Projects -->
+        <!-- #work -->
 
-        <!-- Footer -->
+        <!-- footer -->
         <footer id="footer" class="pt-5 px-3">
           <div id="contact_us">
             <div class="row bg-light py-5">
@@ -224,18 +217,21 @@
             </div>
           </div>
         </footer>
-        <!-- End Footer -->
 
       </div>
     </div>
   </main>
 
-  <!-- JavaScript: Using Bootstrap's bundle which includes Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoKo8HAP7Ckz+Fv/6E5o7AWVY1I1+qq4r7XfCja0q6x9gW" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
-    integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
-    crossorigin="anonymous"></script>
+    integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous"></script>
+
   <script src="./vendor/typed/typed.min.js"></script>
   <script src="./index.js"></script>
 </body>
