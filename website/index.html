@@ -2,234 +2,232 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal or portfolio webpage for Geele Evans">
-    <title>Geele Evans</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal or portfolio webpage for Geele Evans">
+  <title>Geele Evans</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
 </head>
 
 <body>
+  <!-- header area -->
+  <header id="header">
+    <div class="row m-0">
+      <div class="col-3 bgcolor-black">
+        <nav class="primary-nav navbar-expand-md">
+          <div class="site-title text-center text-light py-5">
+            <a href="#" class="navbar-brand font-staat font-size-40">GE</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+            <a href="#about_me" class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
+            <a href="#projects" class="nav-item nav-link text-white-50 font-os font-size-16 active">Projects</a>
+            <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't read the counter</div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+  </header>
+  <!-- #header area -->
 
-    <!-- header area -->
-    <header id="header">
-        <div class="row m-0">
-            <div class="col-3 bgcolor-black">
-                <nav class="primary-nav navbar-expand-md">
-                    <div class="site-title text-center text-light py-5">
-                        <a href="#" class="navbar-brand font-staat font-size-40">GE</a>
-                    </div>
-                    <div class="d-flex flex-column">
-                        <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
-                        <a href="#about_me"
-                            class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
-                        <a href="#projects"
-                            class="nav-item nav-link text-white-50 font-os font-size-16 active">projects</a>
-                        <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't
-                            read the counter</div>
-                    </div>
-                </nav>
+  <main id="site-main">
+    <div class="row m-0">
+      <div class="col-md-9 offset-md-3 px-0">
+
+        <!-- site-banner area -->
+        <section class="site-banner bg-light" id="home">
+          <div class="banner-area">
+            <div class="author text-center">
+              <div class="author-img"></div>
+              <h1 class="text-black font-staat font-size-40 text-uppercase py-3">Geele Evans</h1>
+              <h5 class="text-black font-ram font-size-27">I'm a <span id="typed"></span></h5>
             </div>
-        </div>
-        <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
-    </header>
-    <!-- #header area -->
+          </div>
+        </section>
+        <!-- #site-banner area -->
 
-    <main id="site-main">
-        <div class="row m-0">
-            <div class="col-md-9 offset-md-3 px-0">
-
-                <!-- site-banner area -->
-                <section class="site-banner bg-light" id="home">
-                    <div class="banner-area">
-                        <div class="author text-center">
-                            <div class="author-img"></div>
-                            <h1 class="text-black font-staat font-size-40 text-uppercase py-3">Geele Evans</h1>
-                            <h5 class="text-black font-ram font-size-27">I'm a <span id="typed"></span></h5>
-                        </div>
-                    </div>
-                </section>
-                <!-- #site-banner area -->
-
-                <!-- about me area -->
-                <section class="about px-4 my-5" id="about_me">
-                    <div class="me py-5">
-                        <h5 class="text-uppercase font-os font-size-16 text-muted">information</h5>
-                        <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
-                    </div>
-                    <div class="row m-0">
-                        <div class="col-sm-5 pl-0">
-                            <img src="./assets/banner.png" alt="profile image" class="img-fluid">
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="text-uppercase font-os font-size-16 text-muted">About Me</h6>
-                            <h5 class="font-ram font-size-20 py-2">My name is Geele Evans & I am a <span id="typed_2"></span></h5>
-                            <p class="font-ram text-black-50 py-2">
-                                United States Marine Corps veteran and Infrastructure Engineer with over 10 years of experience in the
-                                implementation and administration of complex corporate infrastructure environments. I have successfully
-                                led and delivered mission-critical projects utilizing technologies such as VMware, Red Hat Linux, and EMC SAN,
-                                among others.Currently specializing in Cloud and DevOps technologies, I focus on implementing real-world projects
-                                leveraging AWS, Microsoft Azure, Google Cloud, and Oracle Cloud services. My objective is to support organizations
-                                in their migration and modernization journeys, seamlessly transitioning from on-premises to the Cloud while optimizing
-                                performance, scalability, and cost efficiency. My military background instills discipline, strategic planning, and
-                                teamwork into every project I undertake, ensuring mission success in dynamic environments.
-                            </p>
-                            <div class="d-flex flex-row flex-wrap justify-content-between py-4">
-                                <div class="d-flex flex-column">
-                                    <p class="font-ram"><b>Website: </b><span
-                                            class="text-black-50">https://resume.geele.cloud</span></p>
-                                </div>
-                            </div>
-                            <button type="button" class="btn btn-dark text-uppercase mr-3" id="downloadBtn">Download Resume</button>
-                            <script>
-                                document.getElementById("downloadBtn").addEventListener("click", function () {
-                                    window.location.href = "./assets/GeeleResume.pdf";
-                                });
-                            </script>
-                        </div>
-                    </div>
-                </section>
-                <!-- #about me area -->
-
-                <!-- awards -->
-                <section class="awards px-4 py-5" id="awards">
-                    <div class="do py-5">
-                        <h5 class="text-uppercase font-os font-size-16 text-muted">What I have achieved</h5>
-                        <h1 class="text-uppercase font-staat font-size-34"><i class="fas fa-award"></i> Awards &amp;
-                            Certifications</h1>
-                    </div>
-                    <div class="w-100">
-
-                        <ul class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
-                            <li>
-                                <i class="fa-li fa fa-trophy text-warning"></i>
-                                EC-Council Certified Ethical Hacker
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-trophy text-warning"></i>
-                                AWS Certified Solutions Architect Associate
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-trophy text-warning"></i>
-                                CompTIA Security+
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-trophy text-warning"></i>
-                                Splunk Core User
-                            </li>
-                            <li>
-                                <i class="fa-li fa fa-trophy text-warning"></i>
-                                TCM Security Linux 101
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- work -->
-                <section class="work py-5 px-4 bg-light" id="projects">
-                    <div class="py-3">
-                        <h5 class="text-uppercase font-os font-size-16 text-muted">Projects</h5>
-                        <h1 class="text-uppercase font-staat font-size-34">Creative Work</h1>
-                    </div>
-                    <div class="row">
-                        <div class="frame col-xs-6"></div>
-                        <div class="frame col-sm-4 pb-4">
-                            <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09"><img src="./assets/work/project 01.png"
-                                    alt="work1" class="img-fluid"></a>
-                            <div class="details">
-                                <h2>Implementation of a set of EC2 instances using Terraform</h2>
-                                <p><a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09" title="Live Site"><i
-                                            class="far fa-eye eye"></i></a></p>
-                            </div>
-                        </div>
-                        <div class="frame col-sm-4 pb-4">
-                            <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac"> <img src="./assets/work/project 02.png"
-                                    alt="work1" class="img-fluid"></a>
-                            <div class="details">
-                                <h2>Implementation of a Scalable Web Applications</h2>
-                                <p><a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac" title="Live Site"><i
-                                            class="far fa-eye eye"></i></a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="frame col-sm-4 pb-4">
-                            <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb"><img src="./assets/work/project 03.png" alt="work1"
-                                    alt="work1" class="img-fluid"></a>
-                            <div class="details">
-                                <h2>Migration of a Workload running in a Corporate Data Center</h2>
-                                <p><a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb" title="Live Site"><i
-                                            class="far fa-eye eye"></i></a></p>
-                            </div>
-                        </div>
-                        <div class="frame col-sm-4 pb-4">
-                            <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511"><img src="./assets/work/project 04.png" alt="work1"
-                                    alt="work1" class="img-fluid"></a>
-                            <div class="details">
-                                <h2>Automated user migration and management of AWS IAM</h2>
-                                <p><a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511" title="Live Site"><i
-                                            class="far fa-eye eye"></i></a></p>
-                            </div>
-                        </div>
-                </section>
-                <!-- #work -->
-
-
-                <!--footer-->
-                <footer id="footer" class="pt-5 px-3">
-                    <div id="contact_us">
-                        <div class="row bg-light py-5">
-                            <div class="col-sm-4 my-5 text-center">
-                                <h6 class="font-ram font-size-16 text-black-50">&copy;2025 Geele. All rights reserved
-                                </h6>
-                            </div>
-                            <div class="col-sm-4 my-4 text-center">
-                                <div class="footer-title">
-                                    <p class="description font-os font-size-16 text-black-50 text-uppercase">Made with ❤
-                                    </p>
-                                </div>
-                                <div class="counter-number">Couldn't read the counter</div>
-                            </div>
-                            <div class="social-icons col-sm-4 my-4 text-center">
-                                <a href="https://www.linkedin.com/in/geele-evans/" target="blank">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="https://github.com/SaintGeele" target="blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://medium.com/@geele.evans" target="blank">
-                                    <i class="fa-brands fa-medium"></i>
-                                </a>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
+        <!-- about me area -->
+        <section class="about px-4 my-5" id="about_me">
+          <div class="me py-5">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">information</h5>
+            <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
+          </div>
+          <div class="row m-0">
+            <div class="col-sm-5 pl-0">
+              <img src="./assets/banner.png" alt="profile image" class="img-fluid">
             </div>
-        </div>
-    </main>
+            <div class="col-sm-6">
+              <h6 class="text-uppercase font-os font-size-16 text-muted">About Me</h6>
+              <h5 class="font-ram font-size-20 py-2">My name is Geele Evans & I am a <span id="typed_2"></span></h5>
+              <p class="font-ram text-black-50 py-2">
+                United States Marine Corps veteran and Infrastructure Engineer with over 10 years of experience in the
+                implementation and administration of complex corporate infrastructure environments. I have successfully
+                led and delivered mission-critical projects utilizing technologies such as VMware, Red Hat Linux, and EMC SAN,
+                among others. Currently specializing in Cloud and DevOps technologies, I focus on implementing real-world projects
+                leveraging AWS, Microsoft Azure, Google Cloud, and Oracle Cloud services. My objective is to support organizations
+                in their migration and modernization journeys, seamlessly transitioning from on-premises to the Cloud while optimizing
+                performance, scalability, and cost efficiency. My military background instills discipline, strategic planning, and
+                teamwork into every project I undertake, ensuring mission success in dynamic environments.
+              </p>
+              <div class="d-flex flex-row flex-wrap justify-content-between py-4">
+                <div class="d-flex flex-column">
+                  <p class="font-ram"><b>Website: </b><span class="text-black-50">https://resume.geele.cloud</span></p>
+                </div>
+              </div>
+              <button type="button" class="btn btn-dark text-uppercase me-3" id="downloadBtn">Download Resume</button>
+              <script>
+                document.getElementById("downloadBtn").addEventListener("click", function () {
+                  window.location.href = "./assets/GeeleResume.pdf";
+                });
+              </script>
+            </div>
+          </div>
+        </section>
+        <!-- #about me area -->
 
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+        <!-- awards -->
+        <section class="awards px-4 py-5" id="awards">
+          <div class="do py-5">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">What I have achieved</h5>
+            <h1 class="text-uppercase font-staat font-size-34"><i class="fas fa-award"></i> Awards &amp; Certifications</h1>
+          </div>
+          <div class="w-100">
+            <ul class="fa-ul mb-0 font-ram font-size-16 text-black-50 pb-3">
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                EC-Council Certified Ethical Hacker
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                AWS Certified Solutions Architect Associate
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                CompTIA Security+
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                Splunk Core User
+              </li>
+              <li>
+                <i class="fa-li fa fa-trophy text-warning"></i>
+                TCM Security Linux 101
+              </li>
+            </ul>
+          </div>
+        </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
-        integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ==" crossorigin="anonymous"></script>
+        <!-- work -->
+        <section class="work py-5 px-4 bg-light" id="projects">
+          <div class="py-3">
+            <h5 class="text-uppercase font-os font-size-16 text-muted">Projects</h5>
+            <h1 class="text-uppercase font-staat font-size-34">Creative Work</h1>
+          </div>
+          <div class="row">
+            <div class="frame col-6"></div>
+            <div class="frame col-sm-4 pb-4">
+              <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09">
+                <img src="./assets/work/project 01.png" alt="Project 1" class="img-fluid">
+              </a>
+              <div class="details">
+                <h2>Implementation of a set of EC2 instances using Terraform</h2>
+                <p>
+                  <a href="https://medium.com/@geele.evans/implementation-of-a-set-of-ec2-instances-using-terraform-and-aws-systems-manager-configuration-with-d4053da66c09" title="Live Site">
+                    <i class="far fa-eye eye"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="frame col-sm-4 pb-4">
+              <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac">
+                <img src="./assets/work/project 02.png" alt="Project 2" class="img-fluid">
+              </a>
+              <div class="details">
+                <h2>Implementation of a Scalable Web Application</h2>
+                <p>
+                  <a href="https://medium.com/@geele.evans/implementation-of-a-scalable-web-application-using-the-services-of-aws-elastic-beanstalk-dynamodb-18513e6c63ac" title="Live Site">
+                    <i class="far fa-eye eye"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="frame col-sm-4 pb-4">
+              <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb">
+                <img src="./assets/work/project 03.png" alt="Project 3" class="img-fluid">
+              </a>
+              <div class="details">
+                <h2>Migration of a Workload running in a Corporate Data Center</h2>
+                <p>
+                  <a href="https://medium.com/@geele.evans/migration-of-a-workload-running-in-a-corporate-data-center-to-aws-using-the-amazon-ec2-and-rds-7699a7234aeb" title="Live Site">
+                    <i class="far fa-eye eye"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="frame col-sm-4 pb-4">
+              <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511">
+                <img src="./assets/work/project 04.png" alt="Project 4" class="img-fluid">
+              </a>
+              <div class="details">
+                <h2>Automated user migration and management of AWS IAM</h2>
+                <p>
+                  <a href="https://medium.com/@geele.evans/automated-user-migration-and-management-of-aws-identity-and-access-management-iam-resources-9c72d789511" title="Live Site">
+                    <i class="far fa-eye eye"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- #work -->
 
-    <script src="./vendor/typed/typed.min.js"></script>
+        <!-- footer -->
+        <footer id="footer" class="pt-5 px-3">
+          <div id="contact_us">
+            <div class="row bg-light py-5">
+              <div class="col-sm-4 my-5 text-center">
+                <h6 class="font-ram font-size-16 text-black-50">&copy;2025 Geele. All rights reserved</h6>
+              </div>
+              <div class="col-sm-4 my-4 text-center">
+                <div class="footer-title">
+                  <p class="description font-os font-size-16 text-black-50 text-uppercase">Made with ❤</p>
+                </div>
+                <div class="counter-number">Couldn't read the counter</div>
+              </div>
+              <div class="social-icons col-sm-4 my-4 text-center">
+                <a href="https://www.linkedin.com/in/geele-evans/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/SaintGeele" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://medium.com/@geele.evans" target="_blank">
+                  <i class="fa-brands fa-medium"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
 
-    <script src="./index.js"></script>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <!-- If you decide to use Bootstrap 5's bundle, it already includes Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoKo8HAP7Ckz+Fv/6E5o7AWVY1I1+qq4r7XfCja0q6x9gW" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
+    integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
+    crossorigin="anonymous"></script>
+  <script src="./vendor/typed/typed.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 
-</htm>
+</html>
