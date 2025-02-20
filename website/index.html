@@ -14,26 +14,36 @@
 </head>
 
 <body>
-  <!-- header area -->
+  <!-- Mobile-Optimized Navbar -->
   <header id="header">
-    <div class="row m-0">
-      <div class="col-3 bgcolor-black">
-        <nav class="primary-nav navbar-expand-md">
-          <div class="site-title text-center text-light py-5">
-            <a href="#" class="navbar-brand font-staat font-size-40">GE</a>
-          </div>
-          <div class="d-flex flex-column">
-            <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
-            <a href="#about_me" class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
-            <a href="#projects" class="nav-item nav-link text-white-50 font-os font-size-16 active">Projects</a>
-            <div class="counter-number nav-item nav-link text-white-50 font-os font-size-16 active">Couldn't read the counter</div>
-          </div>
-        </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand font-staat font-size-40" href="#">GE</a>
+        <!-- Toggler Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar"
+          aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsible Navigation Menu -->
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white-50 font-os font-size-16" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50 font-os font-size-16" href="#about_me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50 font-os font-size-16" href="#projects">Projects</a>
+            </li>
+            <!-- You can add additional nav items here -->
+          </ul>
+        </div>
       </div>
-    </div>
-    <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+    </nav>
   </header>
-  <!-- #header area -->
+  <!-- End of Navbar -->
 
   <main id="site-main">
     <div class="row m-0">
@@ -58,7 +68,7 @@
             <h1 class="text-uppercase font-staat font-size-34">About Me</h1>
           </div>
           <div class="row m-0">
-            <div class="col-sm-5 pl-0">
+            <div class="col-sm-5">
               <img src="./assets/banner.png" alt="profile image" class="img-fluid">
             </div>
             <div class="col-sm-6">
@@ -220,7 +230,7 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
     integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-  <!-- If you decide to use Bootstrap 5's bundle, it already includes Popper -->
+  <!-- Using Bootstrap's bundle which includes Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoKo8HAP7Ckz+Fv/6E5o7AWVY1I1+qq4r7XfCja0q6x9gW" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
