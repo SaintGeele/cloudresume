@@ -85,8 +85,12 @@
                                             class="text-black-50">https://resume.geele.cloud</span></p>
                                 </div>
                             </div>
-                            <button type="submit" onclick="window.open('/assets/GeeleResume.pdf')"
-                                class="btn btn-dark text-uppercase mr-3">Download Resume</button>
+                            <button type="button" class="btn btn-dark text-uppercase mr-3" id="downloadBtn">Download Resume</button>
+                            <script>
+                                document.getElementById("downloadBtn").addEventListener("click", function () {
+                                    window.location.href = "./assets/GeeleResume.pdf";
+                                });
+                            </script>
                         </div>
                     </div>
                 </section>
