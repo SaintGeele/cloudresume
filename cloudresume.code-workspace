@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Borne Technologies"
+		}
+	],
+	"settings": {
+		"explorerExclude.backup": {}
+	}
+}
